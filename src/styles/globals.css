@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('/public/fonts/Helvetica Neue Regular.otf'),
+    url('/public/fonts/helvetica_neue_regular-webfont.woff') format('woff');
+  /* url('/fonts/Helvetica Neue W01 87 Hv Cn Obl.ttf') format('truetype'); */
+}
+
+html,
+* {
+  max-width: 100vw;
+  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 1em;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: 0.02em;
+}
+
+h6 {
+  letter-spacing: 0.11em;
+}
+
+p {
+  letter-spacing: 0.075em;
+  line-height: 1.4em;
+}
+
+button {
+  font-size: 1.125em;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.05rem;
+  padding: 7px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  height: max-content;
+  font-weight: 500;
+}
+
+.btn-green {
+  background-color: #72c059;
+  color: #ffffff;
+  border: none;
+}
+
+.btn-blue {
+  background-color: #026ea4;
+  color: #ffffff;
+  border: none;
+}
+
+.btn-white {
+  background-color: #ffffff;
+  color: #164467;
+  border: none;
+}
+
+.shortHeroBlue {
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0) 60%
+  );
+  background-color: #026ea4;
+  padding-bottom: 1.5rem;
+}
+
+.shortHeroGreen {
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0) 60%
+  );
+  background-color: #4caf50;
+  padding-bottom: 1.5rem;
+}
+
+.nav-link {
+  letter-spacing: 0.12em;
+  white-space: nowrap;
+}
